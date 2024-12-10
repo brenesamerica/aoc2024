@@ -39,7 +39,7 @@ def calculate_trailhead_scores(matrix):
 def main(file_path):
     matrix = read_matrix(file_path)
     total_score = calculate_trailhead_scores(matrix)
-    print(f"\nSum of the scores of all trailheads: {total_score}")
+    print(f"Sum of the scores of all trailheads: {total_score}")
     return total_score
 
 file_path = "input.txt"

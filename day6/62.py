@@ -75,5 +75,6 @@ try:
     loop_creating_replacements = read_file_to_matrix('input.txt')
     end_time = time.time()  # Record the end time
     execution_time = end_time - start_time
+    print(f"Execution time: {execution_time:.2f} seconds")
 except ValueError as e:
     print(e)

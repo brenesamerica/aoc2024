@@ -1,5 +1,7 @@
 from functools import lru_cache
+import time
 
+start_time = time.time()
 def simulate_stones_single(stone, blinks):
     @lru_cache(maxsize=None)
     def helper(stone, remaining_blinks):
@@ -27,5 +29,7 @@ with open('input.txt', 'r') as file:
 result = 0
 for stone in initial_stones:
     result += simulate_stones_single(stone, blinks)
-
+end_time = time.time()
+execution_time = end_time - start_time
+print(f"Execution time: {execution_time:.2f} seconds")
 print(result)

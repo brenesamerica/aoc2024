@@ -1,3 +1,6 @@
+import time
+
+start_time = time.time()
 def read_file_to_matrix(filename):
     def run_simulation(matrix):
         """Runs the simulation on the given matrix and returns turning points."""
@@ -43,7 +46,7 @@ def read_file_to_matrix(filename):
 
         if len(turning_points) == len(set(turning_points)):
             return False  
-        else:)
+        else:
             return True
     with open(filename, 'r') as file:
         original_matrix = [list(line.strip()) for line in file]
@@ -70,5 +73,7 @@ def read_file_to_matrix(filename):
 
 try:
     loop_creating_replacements = read_file_to_matrix('input.txt')
+    end_time = time.time()  # Record the end time
+    execution_time = end_time - start_time
 except ValueError as e:
     print(e)

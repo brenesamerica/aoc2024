@@ -36,11 +36,6 @@ def main():
     input_file = 'input.txt'
     max_columns = 101
     max_rows = 103
-<<<<<<< HEAD
-    max_steps = 10000
-
-=======
->>>>>>> a8bbdf3 (14.2 corrected)
     robots = parse_input(input_file)
     pyramid_step = move_robots(robots, max_columns, max_rows)
     print(f"The first step where a 4-level high pyramid is formed: {pyramid_step}")

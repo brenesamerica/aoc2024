@@ -81,7 +81,7 @@ def main():
     output_file = 'robots_output.txt'
     max_columns = 101
     max_rows = 103
-    max_steps = 8290
+    max_steps = 10000
 
     robots = parse_input(input_file)
 
